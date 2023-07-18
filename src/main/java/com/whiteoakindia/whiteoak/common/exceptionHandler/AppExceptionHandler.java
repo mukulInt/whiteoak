@@ -16,13 +16,13 @@ public class AppExceptionHandler {
         @ExceptionHandler(value = ServiceException.class)
         public ResponseEntity<Object> handleServiceException(ServiceException ex){
 
-            Object erroMessageDescription = ex.getMessage();
+            Object errorMessageDescription = ex.getMessage();
 
             if(!Objects.isNull(ex.getIndexError())){
-                erroMessageDescription=(ex.getIndexError());
+                errorMessageDescription=(ex.getIndexError());
             }
 
-            return new ResponseEntity<>(erroMessageDescription,new HttpHeaders(),ex.getStatusCode());
+            return new ResponseEntity<>(errorMessageDescription,new HttpHeaders(),ex.getStatusCode());
 
         }
 
