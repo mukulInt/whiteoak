@@ -1,9 +1,11 @@
-package com.whiteoakindia.whiteoak.entity;
+package com.whiteoakindia.whiteoak.Blog.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
+import java.time.LocalDateTime;
 
 @Entity
 @Data
@@ -22,12 +24,17 @@ public class OurBlog {
     private String authorName;
 
     @Column(name = "created_at")
-    private String createdAt;
+    private LocalDateTime createdAt;
 
     @Column(name = "description")
     private String blogDescription;
 
-    @Column(name = "details")
+    @Column(name = "details", columnDefinition = "text")
     private String blogDetails;
+
+    @Column(name = "status")
+    private Integer status;
+
+
 
 }
