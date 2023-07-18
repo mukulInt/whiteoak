@@ -2,13 +2,12 @@ package com.whiteoakindia.whiteoak.bytes.dto;
 
 
 import com.whiteoakindia.whiteoak.bytes.entity.Bytes;
-import com.whiteoakindia.whiteoak.utils.DateFormatUtils;
+import com.whiteoakindia.whiteoak.common.utils.DateFormatUtils;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.time.LocalDateTime;
 import java.util.Objects;
 
 

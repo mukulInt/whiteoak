@@ -2,7 +2,7 @@ package com.whiteoakindia.whiteoak.bytes.daoservice;
 
 import com.whiteoakindia.whiteoak.bytes.entity.Bytes;
 import com.whiteoakindia.whiteoak.bytes.repository.BytesRepository;
-import com.whiteoakindia.whiteoak.utils.ActiveInactiveStatusUtils;
+import com.whiteoakindia.whiteoak.common.utils.ActiveInactiveStatusUtils;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
