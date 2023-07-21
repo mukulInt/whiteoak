@@ -11,6 +11,7 @@ public class WhiteoakApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(WhiteoakApplication.class, args);
+		
 	}
 
 }
